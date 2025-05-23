@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/general_name"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:ems="10"
+        android:hint="general_name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/general_start"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:ems="10"
+        android:hint="general_start"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/general_name" />
+
+    <EditText
+        android:id="@+id/general_end"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:ems="10"
+        android:hint="general_end"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/general_start" />
+
+    <EditText
+        android:id="@+id/general_where"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:ems="10"
+        android:hint="general_where"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/general_end" />
+
+    <EditText
+        android:id="@+id/general_deadline"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:ems="10"
+        android:hint="general_deadline"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/general_where" />
+
+    <Button
+        android:id="@+id/general_btn_add"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="general_add_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/general_brief" />
+
+    <ListView
+        android:id="@+id/lv_general"
+        android:layout_width="409dp"
+        android:layout_height="273dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/general_btn_add" />
+
+    <EditText
+        android:id="@+id/general_brief"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:ems="10"
+        android:hint="general_brief"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/general_deadline" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CFP wiki Searcher</string>
+    <string name="Name">Search</string>
+    <string name="Age">Age</string>
+    <string name="ActiveCostomer">Active Costomer</string>
+    <string name="add">add</string>
+    <string name="viewall">View All</string>
+    <string name="submission">Submission Deadline</string>
+    <string name="notificationDue">Notification Due</string>
+    <string name="finalDue">Final Version Due</string>
+    <string name="similar">Similar Content</string>
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?android:attr/selectableItemBackground">
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/when_date_list"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:text="20230821"
+        app:layout_constraintStart_toEndOf="@+id/when_list"
+        app:layout_constraintTop_toTopOf="@+id/when_list" />
+
+    <TextView
+        android:id="@+id/deadline_list"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:gravity="right"
+        android:text="Deadline"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/name_list"
+        app:layout_constraintTop_toBottomOf="@+id/when_list" />
+
+    <TextView
+        android:id="@+id/when_date_list2"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="4dp"
+        android:text="20230823"
+        app:layout_constraintStart_toEndOf="@+id/sym_list"
+        app:layout_constraintTop_toTopOf="@+id/sym_list" />
+
+    <TextView
+        android:id="@+id/sym_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="~"
+        app:layout_constraintStart_toEndOf="@+id/when_date_list"
+        app:layout_constraintTop_toTopOf="@+id/when_date_list" />
+
+    <TextView
+        android:id="@+id/when_list"
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:gravity="right"
+        android:text="When"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/deadline_list"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/name_list"
+        app:layout_constraintTop_toTopOf="@+id/name_list" />
+
+    <TextView
+        android:id="@+id/deadline_date_list"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:text="20230401"
+        app:layout_constraintStart_toEndOf="@+id/deadline_list"
+        app:layout_constraintTop_toTopOf="@+id/deadline_list" />
+
+    <TextView
+        android:id="@+id/where_list"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="none"
+        android:gravity="center_horizontal"
+        android:maxLines="2"
+        android:scrollHorizontally="false"
+        android:text="Kumamoto"
+        app:layout_constraintStart_toStartOf="@+id/name_list"
+        app:layout_constraintTop_toBottomOf="@+id/name_list" />
+
+    <TextView
+        android:id="@+id/name_list"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:ellipsize="none"
+        android:maxLines="2"
+        android:scrollHorizontally="false"
+        android:text="ACIVS 2023  "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/briefText"
+        android:layout_width="364dp"
+        android:layout_height="33dp"
+        android:ellipsize="none"
+        android:maxLines="2"
+        android:scrollHorizontally="false"
+        android:text="BriefText"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintStart_toStartOf="@+id/where_list"
+        app:layout_constraintTop_toBottomOf="@+id/where_list" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
